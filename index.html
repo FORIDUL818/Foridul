@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foridul Islam</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="header">
+   <nav>
+    <div class="logo">FORIDUL</div>
+     <div class="nav-manu" id="navmanus">
+       <span onclick="hidemenu ()">x</span>
+       <ul>
+         <li><a href="#">Home</a></li>
+         <li><a href="#">gallary</a></li>
+         <li><a href="#">about</a></li>
+         <li><a href="#">contact</a></li>
+         <li><a href="#">service</a></li>
+         <li><a href="#">blog</a></li>
+         <li><input type="text"name="search"><input type="submit" name="search"value="search"></li>
+       </ul>
+       
+     </div>
+     <span onclick="openmenu ()">menu</span>
+   </nav>
+   <div class="title-description">
+     <h2>I am webdevoloper</h2>
+     <p>Lorem ipsum amet consectetur adipisicing elit.<br> Nesciunt eius laudantium facere? Quod, amet consectetur adipisicing . Maxime temporibus quisquam</p>
+     <button class="btn">contact me</button>
+     <button class="btn">about us</button>
+   </div>
+  </div>
+    <section class="about-me">
+      <h2>about me</h2>
+            <div class="row">
+              <div class="col1">
+                  <img src="images/Foridul.jpg" alt="">
+              </div>
+              <div class="col2">
+                    <h3>wellcome to my site</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Facere vero tempora enim odit,<br> placeat ut harum nam at ullam dicta exercitationem ipsa quasi, fugit tempore vitae omnis asperiores perferendis excepturi vel minima. Facilis nemo fuga quasi ad facere ea natus.</p>
+              </div>
+            </div>
+    </section>
+    <div id="Foridul"></div>
+<button type="button" onclick="document.getElementById('Foridul').innerHTML='hallo my friend haw are you'">click me</button>
+
+    <script type="text/javascript">
+      var navmanus = document.getElementById('navmanus');
+        function openmenu(){
+          navmanus.style.right="0";
+        }
+        function hidemenu(){
+          navmanus.style.right="-300px";
+        }
+    </script>
+  </div>
+</body>
+</html>
